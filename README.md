@@ -14,7 +14,7 @@ Then, use it:
     </script>
 
 You should include modules for whatever non-core functionality you need.
-jsframework is explicitly lightweight and doens't impose policy -- this 
+jsframework is explicitly lightweight and doesn't impose policy -- this 
 is a good thing!
 
 Share it!
