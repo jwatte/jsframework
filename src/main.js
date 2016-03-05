@@ -30,7 +30,8 @@ var JS = {
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
             try {
-                var v = eval("" + xhr.responseText);
+                var v = eval.call(JS, "(" + xhr.responseText + ")\n" +
+                    "//# sourceURL=" + url);
                 self.cache[url] = v;
                 complete(v);
             } catch (x) {
